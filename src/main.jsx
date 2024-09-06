@@ -11,6 +11,7 @@ import {Sobre} from './pages/Sobre/Sobre'
 import { Pagina404 } from './pages/Pagina404/Pagina404' 
 
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
+import { Layout } from './pages/Layout'
 
 // const rotas = createBrowserRouter ([
 
@@ -23,13 +24,12 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 // ])
 
 const rotas = createBrowserRouter(createRoutesFromElements(
-  <Route path='/'>
+  <Route path='/' element={<Layout/>}>
     <Route index element={<Home/>} />
     <Route path='home' element={<Home/>} />
     <Route path='contato' element={<Contato/>} />
     <Route path='sobre' element={<Sobre/>} />
-    <Route path='*' element={<Pagina404/>} 
-    />
+    <Route path='*' element={<Pagina404/>} />
   </Route>
 
 ))
