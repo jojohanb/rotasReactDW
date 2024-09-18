@@ -1,9 +1,10 @@
+import { Pagina } from "../../componentes/Pagina"
 
 export function Contato(){
 
     return (
-        <div className="flex w-full">
-            <h1 >Contato</h1>
-        </div>
+        <Pagina titulo="Sobre" subtitulo="Informações">
+
+        </Pagina>
     )
 }

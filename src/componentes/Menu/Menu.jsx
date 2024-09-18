@@ -4,12 +4,12 @@ import { NavLink } from "react-router-dom";
 export function Menu(){
 
     const getEstilo= (props)=> {
-        let estiloInicial= "flex gap-1 px-3 py-5 hover:bg-indigo-500 hover:text-teal-50"
-        let estiloAtivo="text-white" 
-        
-        let estiloFinal= props.isActive
-        ? estiloInicial + estiloAtivo
-        : estiloInicial;
+        let estiloInicial= "flex gap-1 px-3 py-5 hover:bg-violet-500 hover:text-white items-center "
+        let estiloAtivo="border-solid border-r-4 border-white-600 text-violet-600 bg-black" 
+        let estiloFinal
+
+        estiloFinal= props.isActive ?estiloFinal=estiloInicial+estiloAtivo: estiloFinal = estiloInicial
+
         return estiloFinal;
     }
 
@@ -31,6 +31,10 @@ export function Menu(){
                 <NavLink to="/sobre" className={getEstilo}>
                     <IconInfoCircle/>
                     Sobre
+                </NavLink>
+                <NavLink to="/estado1" className={getEstilo}>
+                    <IconInfoCircle/>
+                    Estado1
                 </NavLink>
            </nav>
            <footer className="absolute bottom-0 p-3 text-sm">
