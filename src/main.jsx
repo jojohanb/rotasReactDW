@@ -10,12 +10,17 @@ import {Sobre} from './pages/Sobre/Sobre'
 
 import { Pagina404 } from './pages/Pagina404/Pagina404' 
 
-import { Estado1 } from './pages/Estado1'
+import { Estado1 } from './pages/estado/Estado1'
 
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 
 import { Layout } from './pages/Layout'
 
+import { ComEstado } from './pages/estado/ComEstado'
+
+import { CampoTexto } from './pages/estado/CampoTexto'
+
+import { Contador } from './pages/estado/Contador'
 
 // const rotas = createBrowserRouter ([
 
@@ -33,8 +38,11 @@ const rotas = createBrowserRouter(createRoutesFromElements(
     <Route path='home' element={<Home/>} />
     <Route path='contato' element={<Contato/>} />
     <Route path='sobre' element={<Sobre/>} />
-    {/* <Route path='*' element={<Pagina404/>} /> */}
-    <Route path="*" element={<Estado1/>} />
+    <Route path="estado1" element={<Estado1/>} />
+    <Route path="comEstado" element={<ComEstado/>} />
+    <Route path="campoTexto" element={<CampoTexto/>} />,
+    <Route path="contador" element={<Contador/>} />
+    <Route path="*" element={<Pagina404 />} />
   </Route>
 
 ))

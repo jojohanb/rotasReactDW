@@ -1,4 +1,4 @@
-import { IconAddressBook, IconHome, IconInfoCircle, IconRouteAltLeft } from "@tabler/icons-react";
+import { IconAddressBook, IconHome, IconInfoCircle, IconRouteAltLeft, IconSquareRoundedNumber1, IconSquareRoundedNumber2, IconSquareRoundedNumber3, IconSquareRoundedNumber4 } from "@tabler/icons-react";
 import { NavLink } from "react-router-dom";
 
 export function Menu(){
@@ -33,8 +33,20 @@ export function Menu(){
                     Sobre
                 </NavLink>
                 <NavLink to="/estado1" className={getEstilo}>
-                    <IconInfoCircle/>
-                    Estado1
+                    <IconSquareRoundedNumber1/>
+                    Estado 1
+                </NavLink>
+                <NavLink to="/comEstado" className={getEstilo}>
+                    <IconSquareRoundedNumber2/>
+                    Com Estado
+                </NavLink>
+                <NavLink to="/campoTexto" className={getEstilo}>
+                    <IconSquareRoundedNumber3/>
+                    Campo Texto
+                </NavLink>
+                <NavLink to="/contador" className={getEstilo}>
+                    <IconSquareRoundedNumber4/>
+                    Contador
                 </NavLink>
            </nav>
            <footer className="absolute bottom-0 p-3 text-sm">

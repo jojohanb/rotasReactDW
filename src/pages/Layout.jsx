@@ -6,7 +6,9 @@ export function Layout(){
     return(
         <div className="flex bg-indigo-800 w-full">
             <Menu />
-            <Outlet className="" />
+            <main className="flex flex-1">
+            <Outlet/>
+            </main>
         </div>
 
     )
