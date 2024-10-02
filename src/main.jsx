@@ -22,6 +22,10 @@ import { CampoTexto } from './pages/estado/CampoTexto'
 
 import { Contador } from './pages/estado/Contador'
 
+import { Direta } from './pages/comunicacao/comunicacaoDireta'
+
+import { Indireta } from './pages/comunicacao/comunicacaoIndireta'
+
 // const rotas = createBrowserRouter ([
 
 
@@ -42,6 +46,8 @@ const rotas = createBrowserRouter(createRoutesFromElements(
     <Route path="comEstado" element={<ComEstado/>} />
     <Route path="campoTexto" element={<CampoTexto/>} />,
     <Route path="contador" element={<Contador/>} />
+    <Route path="direta" element={<Direta/>} />
+    <Route path="indireta" element={<Indireta/>} />
     <Route path="*" element={<Pagina404 />} />
   </Route>
 
