@@ -48,6 +48,25 @@ export function Menu(){
                     <IconSquareRoundedNumber4/>
                     Contador
                 </NavLink>
+                <NavLink to="comunicacao-direta" className={getEstilo}>
+                    <IconMessageDown />
+                    Comunicação Direta
+                </NavLink>
+        
+                 <NavLink to="comunicacao-indireta" className={getEstilo}>
+                    <IconMessageUp />
+                    Comunicação Indireta
+                 </NavLink>
+                 <NavLink to="useRef" className={getEstilo}>
+                    <IconMessageUp />
+                    UseRef
+                 </NavLink>
+                 <NavLink to="useEffect" className={getEstilo}>
+                    <IconMessageUp />
+                    UseEffect
+                 </NavLink>
+
+
            </nav>
            <footer className="absolute bottom-0 p-3 text-sm">
             <span>Desenvolvimento Web 2</span>

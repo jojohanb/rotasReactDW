@@ -4,7 +4,7 @@ import { Menu } from "../componentes/Menu/Menu";
 export function Layout(){
 
     return(
-        <div className="flex bg-indigo-800 w-full">
+        <div className="flex bg-indigo-800 w-full min-h-screen">
             <Menu />
             <main className="flex flex-1">
             <Outlet/>

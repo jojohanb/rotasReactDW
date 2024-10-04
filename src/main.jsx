@@ -10,7 +10,7 @@ import {Sobre} from './pages/Sobre/Sobre'
 
 import { Pagina404 } from './pages/Pagina404/Pagina404' 
 
-import { Estado1 } from './pages/estado/Estado1'
+import { SemEstado } from './pages/estado/SemEstado'
 
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 
@@ -21,6 +21,16 @@ import { ComEstado } from './pages/estado/ComEstado'
 import { CampoTexto } from './pages/estado/CampoTexto'
 
 import { Contador } from './pages/estado/Contador'
+
+
+import { ComunicacaoDireta } from "./pages/comunicacao/ComunicacaoDireta";
+
+import { ComunicacaoIndireta } from "./pages/comunicacao/ComunicacaoIndireta";
+
+import { UseRef } from './pages/hooks-basicos/UseRef'
+
+import { UseEffect } from './pages/hooks-basicos/UseEffect'
+
 
 // const rotas = createBrowserRouter ([
 
@@ -38,10 +48,14 @@ const rotas = createBrowserRouter(createRoutesFromElements(
     <Route path='home' element={<Home/>} />
     <Route path='contato' element={<Contato/>} />
     <Route path='sobre' element={<Sobre/>} />
-    <Route path="estado1" element={<Estado1/>} />
+    <Route path="semEstado" element={<SemEstado/>} />
     <Route path="comEstado" element={<ComEstado/>} />
     <Route path="campoTexto" element={<CampoTexto/>} />,
     <Route path="contador" element={<Contador/>} />
+    <Route path="comunicacao-direta" element={<ComunicacaoDireta/>} />
+    <Route path="comunicacao-indireta" element={<ComunicacaoIndireta/>} />
+    <Route path="useRef" element={<UseRef/>} />
+    <Route path="useEffect" element={<UseEffect/>} />
     <Route path="*" element={<Pagina404 />} />
   </Route>
 
