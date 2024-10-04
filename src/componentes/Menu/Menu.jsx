@@ -1,4 +1,4 @@
-import { IconAddressBook, IconHome, IconInfoCircle, IconRouteAltLeft, IconSquareRoundedNumber1, IconSquareRoundedNumber2, IconSquareRoundedNumber3, IconSquareRoundedNumber4 } from "@tabler/icons-react";
+import { IconAddressBook, IconHome, IconInfoCircle, IconRouteAltLeft, IconSquareRoundedNumber1, IconSquareRoundedNumber2, IconSquareRoundedNumber3, IconSquareRoundedNumber4, IconSquareRoundedNumber5, IconSquareRoundedNumber6 } from "@tabler/icons-react";
 import { NavLink } from "react-router-dom";
 
 export function Menu(){
@@ -48,6 +48,7 @@ export function Menu(){
                     <IconSquareRoundedNumber4/>
                     Contador
                 </NavLink>
+<<<<<<< HEAD
                 <NavLink to="comunicacao-direta" className={getEstilo}>
                     <IconMessageDown />
                     Comunicação Direta
@@ -67,6 +68,16 @@ export function Menu(){
                  </NavLink>
 
 
+=======
+                <NavLink to="/direta" className={getEstilo}>
+                    <IconSquareRoundedNumber5/>
+                     Comunicação Direta
+                </NavLink>
+                <NavLink to="/indireta" className={getEstilo}>
+                    <IconSquareRoundedNumber6/>
+                     Comunicação Indireta
+                </NavLink>
+>>>>>>> eb28893d436da57a6dc491eae9ed3bb33fe598c1
            </nav>
            <footer className="absolute bottom-0 p-3 text-sm">
             <span>Desenvolvimento Web 2</span>
