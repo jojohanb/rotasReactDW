@@ -1,14 +1,11 @@
-import { Pagina } from "../../componentes/Pagina";
+import {Pagina} from "../../componentes/Pagina"
 import { PaiIndireta } from "../../componentes/comunicacao/indireta/PaiIndireta";
 
-export function ComunicacaoIndireta() {
+export function ComunicacaoIndireta(){
 
-    return (
-        <Pagina 
-            titulo="Comunicação Indireta"
-            subtitulo="Exemplo de comunicação INDIRETA entre componentes"
-        >
-            <PaiIndireta />
-        </Pagina>
+    return(
+        <Pagina titulo="Comunicacao" subtitulo="Indireta">
+           <PaiIndireta/>
+        </Pagina> 
     )
 }

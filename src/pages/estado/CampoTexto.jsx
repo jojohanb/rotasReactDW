@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Pagina } from "../../componentes/Pagina";
 
 export function CampoTexto(){
-    const [texto, setTexto] =useState("")
+
+    const [texto, setTexto] =useState("aaaa")
 
     return(
         <Pagina titulo="campo texto" subtitulo="conceito de texto em react">

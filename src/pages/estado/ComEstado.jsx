@@ -1,5 +1,6 @@
-import { Pagina } from "../../componentes/Pagina"
 import { useState } from "react"
+import { Pagina } from "../../componentes/Pagina"
+
 
 export function ComEstado(){
     const [numero, setNumero] = useState(0)
@@ -10,23 +11,18 @@ export function ComEstado(){
 
     }
 
-    
-
     return(
         <Pagina titulo="Com Estado" subtitulo="Conceito de Estado no React">
-        <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4">
   
-          <span className="text-2xl">
-            {numero}
-          </span>
-          <button 
-            className="bg-purple-400 rounded-md p-2"
-            onClick={incrementar}
-          >
-            Incrementar
-          </button>
+              <span className="text-2xl">
+                {numero}
+              </span>
+              <button className=" bg-blue-500 rounded-md p-2" onClick={incrementar}>
+                Incrementar
+              </button>
   
-        </div>
+            </div>
       </Pagina>
         // <Pagina titulo="com estado" subtitulo="Conceitos de Estado 1">
         //  <div className="flex flex-col">

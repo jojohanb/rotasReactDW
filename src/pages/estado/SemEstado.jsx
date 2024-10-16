@@ -1,7 +1,7 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Pagina } from "../../componentes/Pagina";
 
-export function Estado1(){
+export function SemEstado() {
     // const [num, setNum] = useState(0);
     // const estado= useState(0)
     // const num = estado[0]
@@ -13,9 +13,6 @@ export function Estado1(){
     //     setNum(num + 1);
     //   }
     
-  
-
-
     let numero=0
 
     function incrementar(){
@@ -34,10 +31,7 @@ export function Estado1(){
         <span className="text-2xl">
           {numero}
         </span>
-        <button 
-          className="bg-purple-400 rounded-md p-2"
-          onClick={incrementar}
-        >
+        <button className=" bg-blue-500 rounded-md p-2" onClick={incrementar}>
           Incrementar
         </button>
 

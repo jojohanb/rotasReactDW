@@ -1,10 +1,11 @@
 import {Pagina} from "../../componentes/Pagina"
+import { PaiDireta } from "../../componentes/comunicacao/direta/PaiDireta";
 
-export function Direta(){
+export function ComunicacaoDireta(){
 
     return(
         <Pagina titulo="Comunicacao" subtitulo="Direta">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga provident vitae neque, architecto harum aliquam ab labore pariatur illo vel aut dolorem. Suscipit ipsum at dolores sunt rerum amet provident!</p>
+           <PaiDireta/>
         </Pagina> 
     )
 }
