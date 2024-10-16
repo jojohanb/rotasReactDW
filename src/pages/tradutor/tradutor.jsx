@@ -4,7 +4,7 @@ import { useState } from "react";
 export function Tradutor(){
 
     const [texto, setTexto] = useState("");
-
+//test
 
     return (
         <Pagina titulo="Tradutor" subtitulo="Tradutor Português-Inglês">
@@ -21,6 +21,8 @@ export function Tradutor(){
                     <div className="w-44 h-24 bg-white border border-gray-300 rounded-lg"></div>
                 </div>
             </div>
+
+            
 
        </Pagina>
     )
