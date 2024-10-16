@@ -4,7 +4,6 @@ import { useState } from "react";
 export function Tradutor(){
 
     const [texto, setTexto] = useState("");
-//test
 
     return (
         <Pagina titulo="Tradutor" subtitulo="Tradutor Português-Inglês">

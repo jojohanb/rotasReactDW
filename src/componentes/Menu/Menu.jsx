@@ -45,8 +45,8 @@ export function Menu(){
     return (
         <div className={`flex bg-indigo-900 w-60 h-screen flex-col`}>
            <header className="flex justify-center p-3 border-b border-violet-950 gap-1">
-           <IconBrandReact/> 
-            <span className="font-bold">React Rotas</span>
+           <IconBrandReact className="text-white"/> 
+            <span className="font-bold text-white">React Rotas</span>
            </header>
 
            <nav className="flex flex-col ">
@@ -118,7 +118,7 @@ export function Menu(){
                  </NavLink>
            </nav>
            <footer className="absolute bottom-0 p-3 text-sm">
-                <span>Desenvolvimento Web 2</span>
+                <span className="text-white">Desenvolvimento Web 2</span>
            </footer>
         </div>
     )
